@@ -1,0 +1,78 @@
+.navbar span {
+  margin: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Montserrat:wght@200&family=Poppins&family=Quicksand:wght@300;400;500;600&family=Viga&display=swap');
+
+body:before {
+  z-index: -1;
+  position: absolute;
+  height: 390px;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #050d35;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-family: Monserrat, Sans-serif;
+  color: white;
+  font-size: 55 bold;
+}
+
+.container {
+  width: 650px;
+  height: 200px;
+  background-color: white;
+  margin: 250px auto;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .form-row {
+  justify-content: space-between;
+}
+
+.form-control {
+  width: 300px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.form-label {
+  position: absolute;
+}
+
+.btn.btn-primary {
+  width: 630px;
+  height: 30px;
+  background-color: #050d35;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .container {
+    width: 350px;
+    height: 200px;
+    flex-direction: column;
+  }
+
+  .form-control {
+    width: 300px;
+    height: 15px;
+  }
+
+  .btn.btn-primary {
+    width: 300px;
+    margin-top: 5px;
+  }
+}
